@@ -868,7 +868,24 @@ td {
     letter-spacing: 1px;
     
 }
-
+              /* Animation */
+/* .animat{
+    animation: shake 500ms;
+    animation-iteration-count: infinite;
+} 
+              */
+              @-webkit-keyframes shake{
+                from{
+                    -webkit-transform: rotate(3deg);
+                }
+                to{
+                    -webkit-transform: rotate(-3deg);
+                      -webkit-transform-origin: center center;
+                }
+              }
+#boot-camp:hover{
+    -webkit-animation:shake .1s ease-in-out .1s infinite alternate;
+}
 .box .content h2 span {
     font-size: 14px;
     color: #fff;
